@@ -26,35 +26,35 @@ Built with FastAPI for high-performance API services and Docker for seamless dep
 ## Project Structure
 London_safe_route_backend_with_API/
 ├── Back_end_crime_dataset/
-│   └── data/                    # Crime dataset (raw)
+│ └── data/ # Crime dataset (raw)
 ├── London/
-│   ├── cache_london/             # Cached map data
-│   ├── Map_download/             # Map download and cache
-│   │   ├── cache/
-│   │   ├── london.graphml
-│   │   └── map_download.py
-│   ├── router/                   # API routing
-│   │   └── route.py
-│   ├── safety/                   # Safety score calculations
-│   │   ├── __init__.py
-│   │   ├── crime_data_loader.py
-│   │   ├── crime_types_scanner.py
-│   │   ├── crime_weights.py
-│   │   └── path_safety.py
-│   ├── services/                 # Service layer
-│   │   ├── generate_safety_graph.py
-│   │   ├── map_service.py
-│   │   └── routing.py
-│   └── utils/                     # Utility functions
-│       └── geo_utils.py
-├── app.py                         # FastAPI main app
-├── main.py                         # Entry point
-├── crime_data.json                 # Processed crime data
-├── delete.py                       # Maintenance script
-├── Dockerfile                      # Docker config
-├── refresh_graph.sh                # Shell script to refresh graph
-├── requirements.txt                # Python dependencies
-└── README.md                        # Documentation
+│ ├── cache_london/ # Cached map data
+│ ├── Map_download/ # Map download and cache
+│ │ ├── cache/
+│ │ ├── london.graphml
+│ │ └── map_download.py
+│ ├── router/ # API routing
+│ │ └── route.py
+│ ├── safety/ # Safety score calculations
+│ │ ├── init.py
+│ │ ├── crime_data_loader.py
+│ │ ├── crime_types_scanner.py
+│ │ ├── crime_weights.py
+│ │ └── path_safety.py
+│ ├── services/ # Service layer
+│ │ ├── generate_safety_graph.py
+│ │ ├── map_service.py
+│ │ └── routing.py
+│ └── utils/ # Utility functions
+│ └── geo_utils.py
+├── app.py # FastAPI main app
+├── main.py # Entry point
+├── crime_data.json # Processed crime data
+├── delete.py # Maintenance script
+├── Dockerfile # Docker config
+├── refresh_graph.sh # Shell script to refresh graph
+├── requirements.txt # Python dependencies
+└── README.md # Documentation
 
 ## Tech Stack
 Programming Language: Python 3.11
